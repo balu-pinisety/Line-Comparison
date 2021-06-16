@@ -13,19 +13,19 @@ public class LineComparison {
 		System.out.println("Enter The values for Line 1\n");
 		length();
 		System.out.println("Length of LINE-1 b/n points "+"("+x1+","+y1+") & "+"("+x2+","+y2+") "+"is "+length+"\n");
-		length=line1;
+		line1=length;
 		//Calculating Length for Line 2 by taking values
 		System.out.println("Enter The values for Line 2\n");
 		length();
 		System.out.println("Length of LINE-2 b/n points "+"("+x1+","+y1+") & "+"("+x2+","+y2+") "+"is "+length+"\n");
-		length= line2;
+		line2=length;
 		//Comparing the line lengths
 		if (line1==line2) {
 			System.out.println("Length of LINE-1 & LINE-2 are equal.");
 		}
 		else {
 			System.out.println("Length of LINE-1 & LINE-2 are not equal.");
-		}	
+		}
 	}
 	
 	//Computing the length b/n two Cartesian points
