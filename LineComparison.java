@@ -20,11 +20,15 @@ public class LineComparison {
 		System.out.println("Length of LINE-2 b/n points "+"("+x1+","+y1+") & "+"("+x2+","+y2+") "+"is "+length+"\n");
 		line2=length;
 		//Comparing the line lengths
-		if (line1==line2) {
+		int compare= Float.compare(line1,line2);
+		if (compare==0) {
 			System.out.println("Length of LINE-1 & LINE-2 are equal.");
 		}
+		else if (compare>0){
+			System.out.println("length of LINE-1 is greater than LINE-2.");
+		}
 		else {
-			System.out.println("Length of LINE-1 & LINE-2 are not equal.");
+			System.out.println("length of LINE-1 is smaller than LINE-2.");
 		}
 	}
 	
