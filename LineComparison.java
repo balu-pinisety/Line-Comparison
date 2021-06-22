@@ -7,6 +7,11 @@ public class LineComparison {
 	public static int x1,x2,y1,y2;
 	
 	public static void main(String[] args) {
+		LineComparison lengthCompareObj= new LineComparison();
+		lengthCompareObj.inputs();
+	}
+		
+	public static void inputs() {
 		//Displaying Welcome Message
 		System.out.println("Welcome to Line Comparison Computation Problem\n");
 		//Calculating Length for Line 1 by taking values
@@ -19,6 +24,10 @@ public class LineComparison {
 		length();
 		System.out.println("Length of LINE-2 b/n points "+"("+x1+","+y1+") & "+"("+x2+","+y2+") "+"is "+length+"\n");
 		line2=length;
+		compare();
+	}
+		
+	public static void compare() {
 		//Comparing the line lengths
 		int compare= Float.compare(line1,line2);
 		if (compare==0) {
@@ -35,7 +44,7 @@ public class LineComparison {
 	//Computing the length b/n two Cartesian points
 	public static void length(){
 		Scanner scan = new Scanner(System.in);
-		//scanningg user input values
+		//scanning user input values
 		System.out.println("Enter the x1 value for Line:");
 		x1=scan.nextInt();
 		System.out.println("Enter the y1 value for Line:");
@@ -47,4 +56,3 @@ public class LineComparison {
 		//Calculating the length using formula
 		length=(float) Math.sqrt(Math.pow(x2-x1,2)+ Math.pow(y2-y1,2));
 	}
-}
